@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab14.model.RegisterController">
+   <children>
+      <ComboBox fx:id="optionsCB" layoutX="213.0" layoutY="231.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label alignment="CENTER" prefHeight="42.0" prefWidth="604.0" text="ALFA BANK">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="descripcionTF" layoutX="213.0" layoutY="143.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="montoTF" layoutX="213.0" layoutY="98.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="datePicker" layoutX="213.0" layoutY="188.0" />
+      <Button fx:id="agregarBTN" layoutX="156.0" layoutY="295.0" mnemonicParsing="false" onAction="#add" text="Agregar" />
+      <Label fx:id="balanceLabel" layoutX="273.0" layoutY="53.0" prefHeight="25.0" prefWidth="116.0">
+         <font>
+            <Font name="Arial Narrow" size="12.0" />
+         </font></Label>
+      <Button fx:id="eliminarBTN" layoutX="387.0" layoutY="295.0" mnemonicParsing="false" onAction="#delete" text="Eliminar" />
+      <Button fx:id="verMovimientosBTN" layoutX="249.0" layoutY="295.0" mnemonicParsing="false" onAction="#viewRecords" text="Ver movimientos" />
+      <Label layoutX="213.0" layoutY="50.0" prefHeight="31.0" prefWidth="59.0" text="Balance:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
